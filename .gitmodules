@@ -1,0 +1,3 @@
+[submodule "build"]
+	path = build
+	url = git@github.com:shiftyp/submodule-gh-pages-example.git
