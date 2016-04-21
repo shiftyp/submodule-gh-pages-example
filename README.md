@@ -1,6 +1,10 @@
 # Setting up your gh-pages as a submodule
 
-When setting up a GitHub page only repo where you have some source files and a build step, it isn't exactly clear how you should go about creating the repository without mixing your source and built files, and without having to navigate to a build directory on your github page. There is a way to do it, and it involves using submodules. You basically have a repository, inside your repository, that is also your repository...inception type stuff I know but it doesn't require superpowers.
+When setting up a GitHub page only repo where you have some source files and a build step, it isn't exactly clear how you should go about creating the repository without mixing your source and built files, and without having to navigate to a build directory on your github page. 
+
+There is a way to do it, and it involves using submodules. If you look at this repo on GitHub you'll see that the `build` directory looks a little funny and has a commit hash next to it. That's because it's a submodule; a git repo within a git repo. If you look at what's in there, and look at the gh-pages branch, you'll see that they are exactly the same.
+
+What we have here is a repository, inside the repository, that is also the repository...inception type stuff I know but it doesn't require superpowers to set this up for yourself. The advantage is your gh-pages branch will be just your built files, your master branch will have your source, and you'll still have your same build directory to build and test in. So let's see how to set this up:
 
 ## The Setup
 
