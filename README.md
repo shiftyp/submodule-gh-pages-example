@@ -21,7 +21,7 @@ git checkout gh-pages
 cd ../
 git commit -am "Set up gh-pages as a submodule"
 ```
-Annd you're done, and you can skip to the workflow section. If you alredy have a some work done then follow these steps:
+Annd you're done, and you can skip to the workflow section. If you already have a some work done then follow these steps:
 
 Reclone your repository into a new directory, so for this one I'd do this from the directory above my current project:
 ```shell
