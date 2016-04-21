@@ -4,12 +4,12 @@ When setting up a GitHub page only repo where you have some source files and a b
 
 ## The Setup
 
-1. Reclone your repository into a new directory, so for this one I'd do this from the directory above my current project:
+Reclone your repository into a new directory, so for this one I'd do this from the directory above my current project:
 ```shell
 git clone git@github.com:shiftyp/submodules-gh-pages-example.git some-other-directory
 cd some-other-directory
 ```
-2. Checkout an orphan gh-pages branch. If you already have a gh-pages branch, delete that first (be sure that your master branch is up to date before you do this). To do all of this, you'd do:
+Checkout an orphan gh-pages branch. If you already have a gh-pages branch, delete that first (be sure that your master branch is up to date before you do this). To do all of this, you'd do:
 ```shell
 git checkout master
 git merge gh-pages
@@ -20,30 +20,30 @@ git push origin :gh-pages
 # Then checkout a new orphan branch (meaning master isn't a parent)
 git checkout --orphan gh-pages
 ```
-3. Clear out the files in this new directory (except the .git dir), then copy what's currently in your build directory into this new repository.
+Clear out the files in this new directory (except the .git dir), then copy what's currently in your build directory into this new repository.
 ```shell
 mv .git ../git-backup-tmp
 rm -r ./*
 mv ../git-backup-tmp ./.git
 cp -r ../submodules-gh-pages-example/build/* ./
 ```
-4. Now commit and push
+Now commit and push
 ```shell
 git commit -am "Redoing gh-pages as a submodule, initial commit"
 git push origin gh-pages
 ```
-5. You can now remove the current directory. Then cd into your old repo and remove the build directory.
+You can now remove the current directory. Then cd into your old repo and remove the build directory.
 ```shell
 cd ../
 rm -rf some-other-directory
 cd submodule-gh-pages-example
 rm -rf build
 ```
-6. Add your repository...to your repository...as a submodule. Whoa!
+Add your repository...to your repository...as a submodule. Whoa!
 ```shell
 git submodule add git@github.com:shiftyp/submodule-gh-pages-example.git build
 ```
-7. cd into your build directory and checkout gh-pages
+cd into your build directory and checkout gh-pages
 ```
 cd build
 git checkout gh-pages
