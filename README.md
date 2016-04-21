@@ -8,7 +8,7 @@ What we have here is a repository, inside the repository, that is also the repos
 
 ## The Setup
 
-If you are just starting your project and have an empty directory, the steps are surprisingly simple:
+If you are just starting your project and have a fresh repository, the steps are surprisingly simple:
 
 ```
 git checkout --orphan gh-pages
