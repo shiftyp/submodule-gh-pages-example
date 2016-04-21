@@ -70,7 +70,7 @@ git checkout gh-pages
 
 ## The Workflow
 
-Annnd your done! Now build as usual, and when you want to push to gh-pages, cd into build and do a commit and push to `origin gh-pages`. If you end up wanting to check out your repository somewhere else do:
+Annnd you're done! Now build as usual, and when you want to push to gh-pages, cd into build and do a commit and push to `origin gh-pages`. If you end up wanting to check out your repository somewhere else do:
 ```
 git clone git@github.com:shiftyp/submodule-gh-pages-example.git
 cd submodule-gh-pages-example
