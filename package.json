@@ -3,7 +3,7 @@
 	"version": "1.0.0",
 	"description": "An example of using a submodule for your gh-pages branch",
 	"scripts": {
-		"build": "mustache context.json src.mustache > build/index.html"
+		"build": "mustache src/context.json src/src.mustache > build/index.html"
 	},
 	"repository": {
 		"type": "git",
