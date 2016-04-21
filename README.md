@@ -8,6 +8,19 @@ What we have here is a repository, inside the repository, that is also the repos
 
 ## The Setup
 
+If you are just starting your project and have an empty directory, the steps are surprisingly simple:
+
+```
+git checkout --orphan gh-pages
+git commit -m "initial gh-pages commit"
+git push origin gh-pages
+git checkout master
+git submodule add <the clone url for your repo> build
+cd build
+git checkout gh-pages
+```
+Annd you're done, and you can skip to the workflow section. If you alredy have a some work done then follow these steps:
+
 Reclone your repository into a new directory, so for this one I'd do this from the directory above my current project:
 ```shell
 git clone git@github.com:shiftyp/submodules-gh-pages-example.git some-other-directory
