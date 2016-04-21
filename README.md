@@ -18,6 +18,8 @@ git checkout master
 git submodule add <the clone url for your repo> build
 cd build
 git checkout gh-pages
+cd ../
+git commit -am "Set up gh-pages as a submodule"
 ```
 Annd you're done, and you can skip to the workflow section. If you alredy have a some work done then follow these steps:
 
