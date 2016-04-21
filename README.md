@@ -1,6 +1,6 @@
 # Setting up your gh-pages as a submodule
 
-When setting up a GitHub page only repo where you have some source files and a build step, it's exactly clear how you should go about creating the repository without mixing your source and built files, and without having to navigate to a build directory on your github page. There is a way to do it, and it involves using submodules. You basically have a repository, inside your repository, that is also your repository...inception type stuff I know but it doesn't require superpowers.
+When setting up a GitHub page only repo where you have some source files and a build step, it isn't exactly clear how you should go about creating the repository without mixing your source and built files, and without having to navigate to a build directory on your github page. There is a way to do it, and it involves using submodules. You basically have a repository, inside your repository, that is also your repository...inception type stuff I know but it doesn't require superpowers.
 
 ## The Setup
 
